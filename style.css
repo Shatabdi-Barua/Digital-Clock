@@ -1,0 +1,26 @@
+body {
+	background: linear-gradient(86deg, #f7b8b2 38%, #e8e7c8 73%);
+}
+.container {
+    /* max-width: 900px; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 40px;
+}
+  
+  .display {
+    width: 50rem;
+    background-color: rgba(45, 163, 234, 0.5);
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 3.5rem;
+    font-style: oblique;
+  }
+  
+  .show_date {
+    background-color: #2385db;
+    padding: 2rem 0;
+  }
