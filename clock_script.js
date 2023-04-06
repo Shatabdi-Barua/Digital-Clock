@@ -1,13 +1,13 @@
 setInterval(showTime, 1000);
-function showTime()
+function showTime() //every seconds time is showing
 {
-    const dt = new Date();
-    let hrs = dt.getHours();
+    const dt = new Date(); //get current date
+    let hrs = dt.getHours(); 
     let mins = dt.getMinutes();
     let sec = dt.getSeconds();
-    let session = hrs >= 12 ? "PM":"AM" 
+    let session = hrs >= 12 ? "PM":"AM" // if hour is greater than 12 than it'll "PM" otherwise "AM"
 
-    hrs = hrs == 0 ? "12" :( hrs > 12 ? (hrs - 12) : hrs); 
+    hrs = hrs == 0 ? "12" :( hrs > 12 ? (hrs - 12) : hrs);  //to show time greater than 12 we need to suntract the value from 12
     hrs = (hrs < 10) ? "0" + hrs : hrs;
     mins = (mins < 10) ? "0" + mins : mins;
     sec = (sec < 10) ? "0" + sec : sec;
